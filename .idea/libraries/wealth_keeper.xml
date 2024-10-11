@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="wealth-keeper">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tag-service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/category-service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/report-service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/notification-service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/budget-service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/user-service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/summary-service.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

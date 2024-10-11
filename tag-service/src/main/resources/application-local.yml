@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://desolit-server:27017/wealthkeeperdb
+      username: root
+      password: mongo*db
+
+scheduling-jobs:
+  enabled: true

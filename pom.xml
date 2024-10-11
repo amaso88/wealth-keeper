@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<name>Wealth Keeper App</name>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.desolitech</groupId>
+	<artifactId>wealth-keeper</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.4</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<description>
+		Wealth Keeper App is a finance management tool that helps users track income, expenses, and budgets effectively.
+	</description>
+
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+
+	<modules>
+		<module>budget-service</module>
+		<module>category-service</module>
+		<module>notification-service</module>
+		<module>report-service</module>
+		<module>summary-service</module>
+		<module>tag-service</module>
+		<module>user-service</module>
+	</modules>
+
+</project>
