@@ -6,28 +6,19 @@
 		<groupId>com.desolitech</groupId>
 		<artifactId>wealth-keeper</artifactId>
 		<version>1.0-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.desolitech</groupId>
 	<artifactId>summary-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Summary Service</name>
 	<description> Service to generate financial summaries and reports.</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<org.apache.logging.log4j.version>2.19.0</org.apache.logging.log4j.version>
+		<net.sizovs.pipelinr.version>0.7</net.sizovs.pipelinr.version>
+		<org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
+		<com.google.guava.version>32.0.0-android</com.google.guava.version>
+		<org.springframework.data.version>3.3.4</org.springframework.data.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -59,6 +50,54 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sizovs</groupId>
+			<artifactId>pipelinr</artifactId>
+			<version>${net.sizovs.pipelinr.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>${org.mapstruct.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${com.google.guava.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.17.0</version>
+		</dependency>
+		<dependency>
+			<groupId>de.mobiuscode.nameof</groupId>
+			<artifactId>nameof</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!--Hibernate-->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-envers</artifactId>
+			<version>5.6.15.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.6.15.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-envers</artifactId>
+			<version>${org.springframework.data.version}</version>
 		</dependency>
 	</dependencies>
 
